@@ -5,8 +5,8 @@ print(name.upper())
 print(name.lower())
 print(name.title())
 print(f'My name is {name.title()}')
-print(f'\tMy name is {name.title()}');
-print(f'\nMy name is {name.title()}');
+print(f'\tMy name is- {name.title()}');
+print(f'\nMy name is-- {name.title()}');
 
 # rstrip removes whitespaces from right side
 print(f'My name is {name2.rstrip().title()}');
