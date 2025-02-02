@@ -1,7 +1,6 @@
 
 names=['nitish','somendra','akhilesh','mayank','dheeraj']
 print(names)
-
 names.append('aman')
 print(names)
 
