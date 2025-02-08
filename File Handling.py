@@ -49,3 +49,10 @@ def count_text_file(file_path):
 file_path='example.txt'
 lines,words,characters=count_text_file(file_path)
 print(f'Total lines is {lines},total words is {words} and total characters is {characters}')
+
+#Writing and then Reading file
+with open('example.txt','w+') as file:       #The w+ mode in python for reading and writing file
+    file.write('My name is pyhon\n')
+    file.write('whats your name\n')
+    file.seek(0)      #move the file cursor to the begning
+    file.read()
