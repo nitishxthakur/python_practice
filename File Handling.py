@@ -56,3 +56,41 @@ with open('example.txt','w+') as file:       #The w+ mode in python for reading 
     file.write('whats your name\n')
     file.seek(0)      #move the file cursor to the begning
     file.read()
+
+#working with file paths
+
+#creating a new directory
+import os
+new_directory='package'
+#os.mkdir(new_directory)
+print(f'new directory {new_directory} created')
+
+#listing files and directories
+items=os.listdir('.')
+print(items)
+
+#joining paths
+dir_name='folder'
+file_name='file.txt'
+full_path=os.path.join(dir_name, file_name)
+print(full_path)
+
+#checking if the file or directory
+path='example4.txt'
+if os.path.exists(path):
+    print(f'the path exists')
+else:
+    print(f'path not exists')
+
+path1='example.txt'
+if os.path.isfile(path1):
+    print('file exists');
+elif os.path.isdir(path1):
+    print('directory exits')
+else:
+    print('neither a file nor a directory exists')
+
+#Getting a absolute path
+relative_path='example.txt'
+absolute_path=os.path.abspath(relative_path)
+print(absolute_path)
