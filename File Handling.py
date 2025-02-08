@@ -1,4 +1,4 @@
-#Python provides built in function and methods to read and write files.
+#File Handling: Python provides built in function and methods to read and write files.
 
 #Read a whole file
 with open('example.txt','r') as file:
