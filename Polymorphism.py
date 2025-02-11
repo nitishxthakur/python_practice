@@ -15,3 +15,18 @@ obj=A();
 obj.show()
 obj.show('nitish')
 obj.show('nitish','thakur')
+
+
+#Method Overloading: Whenever we writing method name with same signature
+# in parent and child class called method overriding.
+
+class B:   #Parent class
+    def disp(self):
+        print('this is parent class method');
+
+class C(B):
+    def disp(self):
+        #super().disp()
+        print('this is child class method');
+obj=B();
+obj.disp();
