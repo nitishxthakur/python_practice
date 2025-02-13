@@ -17,7 +17,7 @@ obj.show('nitish')
 obj.show('nitish','thakur')
 
 
-#Method Overloading: Whenever we writing method name with same signature
+#Method Overriding: Whenever we writing method name with same signature
 # in parent and child class called method overriding.
 
 class B:   #Parent class
@@ -28,5 +28,5 @@ class C(B):
     def disp(self):
         #super().disp()
         print('this is child class method');
-obj=B();
+obj=C();
 obj.disp();
